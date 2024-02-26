@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="add_player_label">Añadir a FIFA Nominations</string>
+    <string name="nominated_players">Jugadores nominados</string>
+
+
+</resources>

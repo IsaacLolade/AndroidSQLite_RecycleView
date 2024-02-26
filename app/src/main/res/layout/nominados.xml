@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPlayer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/grey"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/add_player_label"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <!--Edit text to enter player's name-->
+        <EditText
+            android:id="@+id/PlayerName"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter player Name" />
+
+        <!--edit text to enter player's club-->
+        <EditText
+            android:id="@+id/Club"
+            android:inputType="text"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter the club they play for" />
+
+
+
+        <!--edit text for player's position-->
+        <EditText
+            android:id="@+id/position"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter players position" />
+
+        <!--edit text for player's position-->
+        <EditText
+            android:id="@+id/number"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Enter players shirt number" />
+
+        <!--button for adding new player-->
+        <Button
+            android:id="@+id/addPLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Add player"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+</LinearLayout>
